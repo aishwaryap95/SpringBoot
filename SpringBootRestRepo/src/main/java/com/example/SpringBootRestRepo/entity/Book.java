@@ -1,9 +1,20 @@
 package com.example.SpringBootRestRepo.entity;
 
+import jakarta.persistence.*;
+
+@Entity
 public class Book {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-Increment
     private int bookid;
+
+    @Column(length = 100, nullable = false)
     private String title;
+    @Column(length = 100, nullable = false)
     private String author;
+
+    @Column(name = "description" )
     private String desc;
     private double price;
 

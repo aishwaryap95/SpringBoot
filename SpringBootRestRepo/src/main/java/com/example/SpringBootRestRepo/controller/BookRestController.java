@@ -1,4 +1,4 @@
-package com.example.SpringBootRestRepo.rest;
+package com.example.SpringBootRestRepo.controller;
 
 import com.example.SpringBootRestRepo.entity.Book;
 import com.example.SpringBootRestRepo.service.BookService;
